@@ -1,0 +1,373 @@
+/* Config de base */
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #313331;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+/*  DEBUT MENU */
+/* Conteneur principal du menu */
+nav {
+    background-color: #222422;
+    height: 100%;
+    width: 10%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+/* Conteneur lien artiste */
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+/* Paramètres titres du menu */
+.title {
+    background-color: #222422;
+    text-align: center;
+    color: white;
+}
+
+.subtitle {
+    color: #acb0ac;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* Action souris */
+nav a:hover {
+    color: white;
+}
+
+/* Couleur text et lien du menu de base */
+nav,
+a,
+li {
+    color: #acb0ac;
+    text-decoration: none;
+}
+
+/* Espacement lien menu */
+li {
+    margin-bottom: 20px;
+}
+
+/* Sous-titre artiste */
+h4 {
+    width: 80%;
+    margin-bottom: 10px;
+    border-bottom: 5px dotted grey;
+    text-align: center;
+}
+
+/* Paramètre logo accueil et parcourir */
+.logo {
+    width: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* paramètre bouton s'abonner du menu */
+.button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.button_nav {
+    width: 80%;
+    height: 50px;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: greenyellow;
+    border: 0;
+}
+
+.button_nav:hover {
+    border: 2px dotted green;
+    box-shadow: 10px 10px 10px green;
+}
+/* FIN MENU */
+
+/* main Principale */
+.princ {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* Section entière */
+.art {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* Image article MAJ */
+.maj {
+    border: 4px solid darkred;
+    margin-bottom: 20px;
+}
+/* Paramètrage de chaque article */
+article {
+    background-color: #585d58;
+    border-radius: 15px;
+    width: 35%;
+    height: 50%;
+    margin: 70px 100px;
+    box-shadow: 10px 10px 15px #464a46;
+    border: 2px solid black;
+}
+
+/* Bannière premium */
+.premium {
+    background-color: #585d58;
+    border: 2px solid greenyellow;
+    border-radius: 15px;
+    width: 100%;
+    height: 150px;
+    margin: 70px 100px;
+    padding-top: 20px;
+    box-shadow: 10px 10px 15px #464a46;
+}
+/* Lien premium */
+.premium a {
+    color: skyblue;
+    font-size: large;
+}
+/* Action souris lien premium */
+.premium a:hover {
+    color: black;
+    font-size: large;
+    background-color: skyblue;
+}
+
+/* Page Artistes */
+/* Réglage des images */
+.img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* réglage du conteneur */
+.list {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DEBUT EFFET FADE */
+/* Conteneur pour chaque img + lien */
+.fade {
+    margin: 0 20px;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+/* Conteneur de chaque Lien */
+.fadep {
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity .5s ease-in-out;
+}
+
+/* Action quand souris passe dessus */
+.fadep:hover {
+    opacity: 1;
+}
+
+/* Réglage texte */
+.fade a.text {
+    color: #FFF;
+    font-size: 20px;
+}
+/* FIN EFFET FADE */
+
+/* DEBUT PAGE PREMIUM */
+.main_premium {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Bloc complet */
+.compar {
+    display: flex;
+    border: 0;
+    width: 800px;
+    height: 600px;
+}
+
+/* Bloc Droit */
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: linear-gradient(to right, #7bff46, #41ff7ae0);
+    border-collapse: collapse;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 15px 10px 50px grey;
+    color: white;
+    align-items: center;
+}
+
+/* Bloc gauche */
+.left {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    border-collapse: collapse;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 15px 10px 50px grey;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+/* Réglage bouton abonnement */
+#abo {
+    margin-top: 50px;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: rgb(215, 218, 16);
+    border: 0;
+}
+
+#abo:hover {
+    border: 2px dotted green;
+    box-shadow: 10px 10px 10px green;
+}
+
+/* Espacement des checkboxs */
+.check {
+    margin: 20px 0px; 
+}
+
+/* Modification des checkboxs */
+input[type=checkbox] { /* Réinitialisation checkbox */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+
+input[type=checkbox] { /* refonte checkbox */
+    border-radius: 4px;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    background: grey;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked { /* refonte checkbox coché */
+    background: greenyellow;
+}
+/* FIN PAGE PREMIUM */
+
+/* DEBUT PAGE DE CHAQUES ARTISTES */
+/* Corps de page */
+.artist {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+/* Bloc d'écoute des sons */
+.sound {
+    color: honeydew;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Paramétrage taille des audios */
+.sound audio {
+    width: 500px;
+}
+
+/* Réglage texte audio */
+.sound figcaption {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/* Paramétrage bloc droit pour le profil */
+.profil {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Paramètres image profil */
+.profil img {
+    border: 5px dotted wheat;
+    border-radius: 50%;
+    text-align: center;
+    width: 400px;
+}
+
+/* Paramètres du texte sous image*/
+.profil p {
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Nom de l'artiste */
+.name {
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 10px 10px 10px whitesmoke;
+}
